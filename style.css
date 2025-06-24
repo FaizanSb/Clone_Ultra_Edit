@@ -1,0 +1,272 @@
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 97vw;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .center {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            align-items: center;
+            font-size: large;
+        }
+
+        .center li i {
+            margin-left: 5px;
+        }
+
+        .center li:hover {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            gap: 30px;
+        }
+
+        .right li i {
+            margin-left: 5px;
+        }
+
+        .nav .right li button {
+
+            border: 2px solid black;
+
+            padding: 10px 20px;
+
+            font-size: large;
+        }
+
+        .right li button:hover {
+            background-color: yellow;
+            color: black;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 991px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .center,
+            .right {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .center li,
+            .right li {
+                margin: 5px 0;
+            }
+        }
+
+        /* Now for body styling */
+
+        .body {
+            width: 100vw;
+        }
+
+        .heading1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 50px;
+            font-weight: normal;
+            color: #333;
+            font-family: sans-serif;
+
+        }
+
+        .heading1 img {
+            margin-left: 10px;
+        }
+
+        .top {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        .details {
+            font-size: 1.5em;
+            text-align: center;
+            color: #555;
+            font-family: sans-serif;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        .macOrLinux {
+
+            background-color: rgb(21, 173, 224);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding: 15px 30px;
+            display: block;
+
+
+
+        }
+
+        .macOrLinux:hover {
+            background-color: rgb(0, 150, 200);
+            cursor: pointer;
+        }
+        .beforeVersion{
+            margin: auto 20px;
+            font-size: 1.2em;
+            
+        }
+
+        .parent{
+            
+            width: 70%;
+            margin: 20px auto;
+           
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 7px 4px;
+            /* margin-top: 10px; */
+            justify-content: center;
+            
+           
+
+        }
+        .child{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 200px;
+            width: 250px;
+            background-color: rgba(119, 136, 153, 0.1);
+            text-align: center;
+            padding: 20px 10px;
+            font-weight: bold;
+        }
+
+        #top{
+            margin-top: -35px;
+            font-weight: normal;
+
+        }
+
+        #botom{
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            /* text-overflow: ellipsis; */
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin-top: 20px;
+            /* font-weight: bold; */
+            /* margin-top: 20px; */
+        }
+
+        .child1{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 200px;
+            width: 250px;
+            background-color: rgba(119, 136, 153, 0.1);
+            text-align: center;
+            padding: 20px 10px;
+            font-weight: bold;
+        }
+
+        .parent button{
+            display: block;
+            margin: 50px auto;
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: rgb(6, 146, 6);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        #top1{
+            margin-top: 16px;
+            font-weight: normal;
+
+        }
+
+        #botom1{
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            /* text-overflow: ellipsis; */
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin-top: 20px;
+            /* font-weight: bold; */
+            /* margin-top: 20px; */
+        }
+
+        #btn{
+            display: block;
+            margin: 13px auto;
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: rgb(6, 146, 6);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            /* cursor: pointer; */
+        }
+
+        .additional{
+            font-size: 12px;
+            font-weight: normal;
+            color: black;
+            margin-top: 28px;
+        }
+
+        @media screen and (max-width: 791px) {
+            .parent {
+                grid-template-columns: 1fr 1fr; /* Single column layout for smaller screens */
+            }
+
+            .child,.child1{
+                margin: 20px auto;
+            }
+           
+        }
+
+         @media screen and (max-width: 600px) {
+            .parent {
+                grid-template-columns: 1fr; /* Single column layout for smaller screens */
+            }
+
+            .child,.child1{
+                margin: 20px auto;
+            }
+           
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        
